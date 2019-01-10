@@ -1,3 +1,10 @@
+html{
+  background-color: teal;
+}
 .player-console {
     display: none;
+  }
+  h1{
+    color: teal;
+    font-family: calibri;
   }
