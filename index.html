@@ -3,7 +3,7 @@
 
 <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/mystyles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
@@ -16,19 +16,19 @@
     <div class="start-menu container">
         <div class="jumbotron">
             <h1>Let's play Pig Dice!</h1>
-            <form id="player-1">
+            <form id="first-player">
                 <div class="form-group">
-                    <label for="player1Name">Player 1 Name:</label>
-                    <input required class="player1Name form-control" type="text">
+                    <label for="firstplayerName">first player's Name:</label>
+                    <input required class="firstplayerName form-control" type="text">
                 </div>
             </form>
-            <form id="player-2">
+            <form id="second-player">
                 <div class="form-group">
-                    <label for="player2Name">Player 2 Name:</label>
-                    <input required class="player2Name form-control" type="text">
+                    <label for="secondplayerName">second player's Name:</label>
+                    <input required class="secondplayerName form-control" type="text">
                 </div>
             </form>
-            <button id="start" class="btn-info btn">Start</button>
+            <button id="start" class="btn-info btn">KickOff</button>
         </div>
     </div>
 
@@ -36,18 +36,18 @@
         <button id="new-game" class="btn-success btn">NEW GAME</button>
         <div class="row">
             <div class="col-md-6">
-                <h2>Player 1: <span id="player1Name"><span></h2>
-                <button id="player1-roll" class="btn-success btn">Roll</button>
-                <button id="player1-hold" class="btn-success btn">Hold</button>
+                <h2>first player: <span id="first-player"><span></h2>
+                <button id="firstplayer-roll" class="btn-success btn">Roll</button>
+                <button id="firstplayer-hold" class="btn-success btn">Hold</button>
                 <h2>Dice Roll: <span id="die-roll-1"></span></h2>
                 <p>Round Total: <span id="round-total-1"></span></p>
                 <p>Total Score: <span id="total-score-1"></span></p>
             </div>
 
             <div class="col-md-6">
-                <h2>Player 2: <span id="player2Name"><span></h2>
-                <button id="player2-roll" class="btn-success btn">Roll</button>
-                <button id="player2-hold" class="btn-success btn">Hold</button>
+                <h2>second player: <span id="second-player"><span></h2>
+                <button id="secondplayer-roll" class="btn-success btn">Roll</button>
+                <button id="secondplayer-hold" class="btn-success btn">Hold</button>
                 <h2>Dice Roll: <span id="die-roll-2"></span></h2>
                 <p>Round Total: <span id="round-total-2"></span></p>
                 <p>Total Score: <span id="total-score-2"></span></p>
