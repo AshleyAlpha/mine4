@@ -1,6 +1,4 @@
-# Project Name:
-
- PIG-DICE-GAME
+# PIG-DICE-GAME
 
 # AUthor: 
 
