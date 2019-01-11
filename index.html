@@ -2,61 +2,100 @@
 <html>
 
 <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="icon" type="image/ico" href="images/title-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link href="css/mystyles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/scripts.js"></script>
-
-    <title>PIG-DICE-GAME</title>
+    <title>pig-dice-game</title>
 </head>
 
 <body>
-
-    <div class="start-menu container">
+    <div class="container">
         <div class="jumbotron">
-            <h1>Let's play Pig Dice!</h1>
-            <form id="first-player">
-                <div class="form-group">
-                    <label for="firstplayerName">first player's Name:</label>
-                    <input required class="firstplayerName form-control" type="text">
-                </div>
-            </form>
-            <form id="second-player">
-                <div class="form-group">
-                    <label for="secondplayerName">second player's Name:</label>
-                    <input required class="secondplayerName form-control" type="text">
-                </div>
-            </form>
-            <button id="start" class="btn-info btn">Begin</button>
+            <h2>the <img src="images/dancing-pig.gif" alt="Dancing Pig">dice game</h2>
+            <p>welcome to the [pig dice game] </p>
+            <button id="help" class="btn bg-warning" type="button" name="button">? - Help</button>
         </div>
-    </div>
+        <div class="login">
+            <h6>Opponnents, enter your respective names</h6>
+            <form class="opponnents">
+                <div class="row">
+                    <div class="col-md-3">
 
-    <div class="player-console container">
-        <button id="new-game" class="btn-success btn">NEW GAME</button>
-        <div class="row">
-            <div class="col-md-6">
-                <h2>first player: <span id="first-player"><span></h2>
-                <button id="firstplayer-roll" class="btn-success btn">Roll</button>
-                <button id="firstplayer-hold" class="btn-success btn">Hold</button>
-                <h2>Dice Roll: <span id="die-roll-1"></span></h2>
-                <p>Round Total: <span id="round-total-1"></span></p>
-                <p>Total Score: <span id="total-score-1"></span></p>
-            </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="player-one">pLayer One</label> <br>
+                        <input class="form-control" id="player-one" type="text" name="player-one" value="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="player-two">pLayer Two</label> <br>
+                        <input class="form-control" id="player-two" type="text" name="player-one" value="">
+                    </div>
+                    <div class="col-md-3">
 
-            <div class="col-md-6">
-                <h2>second player: <span id="second-player"><span></h2>
-                <button id="secondplayer-roll" class="btn-success btn">Roll</button>
-                <button id="secondplayer-hold" class="btn-success btn">Hold</button>
-                <h2>Dice Roll: <span id="die-roll-2"></span></h2>
-                <p>Round Total: <span id="round-total-2"></span></p>
-                <p>Total Score: <span id="total-score-2"></span></p>
-            </div>
+                    </div>
+                    <button id="start" type="submit" name="button" class="btn bg-info">sTart!</button>
+                </div>
+                <!--End div row -->
+            </form>
         </div>
+        <!--End login -->
+
+        <div class="pig-game">
+            <button id="restart" type="button" name="button" onclick="reload();" class="btn bg-info">reStart</button>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="player-name">
+                        <p>pLayer One</p>
+                        <p class="player-one-name"> <span><img class="one-turn check" src="images/turn.png" alt="My Turn"></span>
+                        </p>
+                    </div>
+                    <div class="player-score">
+                        <p><span class="player-one-score">0</span> </p>
+                    </div>
+                </div>
+                <!--End div col player-one -->
+
+                <div class="col-md-4 dice-img">
+
+                    <div class="round-total">
+                        <p>Round Total: <span id="round-total"></span> </p>
+                        <button id="roll" type="button" name="button" class="btn bg-success">Roll</button>
+                        <button id="hold" type="button" name="button" class="btn bg-danger">Hold</button>
+                    </div>
+                </div>
+                <!--End div dice -->
+
+                <div class="col-md-4">
+                    <div class="player-name">
+                        <p>pLayer Two</p>
+                        <p class="player-two-name"> <span><img class="two-turn check" src="images/turn.png" alt="My Turn"></span>
+                        </p>
+                    </div>
+                    <div class="player-score">
+                        <p><span class="player-two-score">0</span> </p>
+                    </div>
+                </div>
+                <!--End div col player-one -->
+            </div>
+            <!--End div row -->
+
+        </div>
+        <!--End div pig-game -->
+
+        <p class="copyright">Copyright© 2018 <span class="copyname">nignanthomas</span> <img src="images/rolling-cat.gif"
+                alt="rolling cat"> </p>
     </div>
-
-
-
+    <!--End div container -->
 </body>
+
+</html>
 
 </html>
