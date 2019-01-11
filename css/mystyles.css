@@ -57,7 +57,7 @@ h2{
   margin-top: 20px;
   height: 100px;
   width: 100px;
-  border: 2px solid lightpink;
+  border: 2px solid teal;
   border-radius: 15%;
 }
 
@@ -70,7 +70,7 @@ h2{
   font-family: Inconsolata;
   font-weight: bold;
   text-align: center;
-  border: 3px solid lightcoral;
+  border: 3px solid lightpink;
   height: 250px;
   border-radius: 10%;
   margin: 0 auto;
