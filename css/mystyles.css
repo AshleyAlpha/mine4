@@ -1,9 +1,111 @@
-html{
-  background-color: teal;
+body {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
 }
-.player-console {
-    display: none;
-  }
-  h1{
-    font-family: calibri;
-  }
+
+.container {
+  /* display: flex; */
+  justify-content: center;
+  /* background-image: url(../images/papyrus.png);
+  width: 667px;
+  height: 429px;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+h2>img {
+  height: 100px;
+  width: 100px;
+}
+#help {
+  border-radius: 10px;
+  float: right;
+}
+
+.login {
+  text-align: center;
+}
+
+.jumbotron {
+  margin:0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 400px;
+  display: block;
+}
+
+#player-one, #player-two {
+  width: 200px;
+  display: block;
+  margin:0 auto;
+}
+#start {
+  display: block;
+  margin:0 auto;
+}
+
+.pig-game {
+  display: none;
+}
+
+.dice-img img {
+  margin-top: 20px;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 15%;
+}
+
+.check {
+  height: 20px;
+  width: 20px;
+}
+
+.col-md-4 {
+  font-family: Inconsolata;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid black;
+  height: 250px;
+  border-radius: 10%;
+  margin: 0 auto;
+  padding-left: -25px;
+  padding-right: -25px;
+}
+
+.dice-img {
+  border: none;
+}
+.round-total {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.player-score {
+  font-size: 500%;
+  color: red;
+}
+
+#restart {
+  display: block;
+  margin:0 auto;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+
+.copyname {
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
+}
+
+p > img {
+  height: 30px;
+  width: 30px;
+}
