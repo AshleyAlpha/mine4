@@ -13,35 +13,35 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>pig-dice-game</title>
+    <title>Pig Dice Game</title>
 </head>
 
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h2>the <img src="images/dancing-pig.gif" alt="Dancing Pig">dice game</h2>
-            <p>welcome to the [pig dice game] </p>
-            <button id="help" class="btn bg-warning" type="button" name="button">? - Help</button>
+            <h2>The <img src="images/tenor.gif" alt="coding Pig">Dice Game</h2>
+            <p>Enjoy the game with a coding pig!!</p>
+            <button id="help" class="btn bg-warning" type="button" name="button">Help - ?</button>
         </div>
         <div class="login">
-            <h6>Opponnents, enter your respective names</h6>
+            <h4>Enter Names:</h4>
             <form class="opponnents">
                 <div class="row">
                     <div class="col-md-3">
 
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="player-one">pLayer One</label> <br>
+                        <label for="player-one">First player</label> <br>
                         <input class="form-control" id="player-one" type="text" name="player-one" value="">
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="player-two">pLayer Two</label> <br>
+                        <label for="player-two">Second player</label> <br>
                         <input class="form-control" id="player-two" type="text" name="player-one" value="">
                     </div>
                     <div class="col-md-3">
 
                     </div>
-                    <button id="start" type="submit" name="button" class="btn bg-info">sTart!</button>
+                    <button id="start" type="submit" name="button" class="btn bg-info">HeReWeGo!</button>
                 </div>
                 <!--End div row -->
             </form>
@@ -49,11 +49,11 @@
         <!--End login -->
 
         <div class="pig-game">
-            <button id="restart" type="button" name="button" onclick="reload();" class="btn bg-info">reStart</button>
+            <button id="restart" type="button" name="button" onclick="reload();" class="btn bg-info">NewGame</button>
             <div class="row">
                 <div class="col-md-4">
                     <div class="player-name">
-                        <p>pLayer One</p>
+                        <p>First player</p>
                         <p class="player-one-name"> <span><img class="one-turn check" src="images/turn.png" alt="My Turn"></span>
                         </p>
                     </div>
@@ -66,7 +66,7 @@
                 <div class="col-md-4 dice-img">
 
                     <div class="round-total">
-                        <p>Round Total: <span id="round-total"></span> </p>
+                        <p>Total Round: <span id="round-total"></span> </p>
                         <button id="roll" type="button" name="button" class="btn bg-success">Roll</button>
                         <button id="hold" type="button" name="button" class="btn bg-danger">Hold</button>
                     </div>
@@ -75,7 +75,7 @@
 
                 <div class="col-md-4">
                     <div class="player-name">
-                        <p>pLayer Two</p>
+                        <p>Second player</p>
                         <p class="player-two-name"> <span><img class="two-turn check" src="images/turn.png" alt="My Turn"></span>
                         </p>
                     </div>
@@ -90,8 +90,7 @@
         </div>
         <!--End div pig-game -->
 
-        <p class="copyright">Copyright© 2018 <span class="copyname">nignanthomas</span> <img src="images/rolling-cat.gif"
-                alt="rolling cat"> </p>
+        <p class="copyright">Copyright© 2019 <span class="copyname"> Alpha</span></p>
     </div>
     <!--End div container -->
 </body>
