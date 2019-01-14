@@ -36,7 +36,7 @@ h2{
   margin-bottom: 50px;
   padding: 20px;
   width: 500px;
-  display: inline-block;
+  display: block;
 }
 
 #player-one, #player-two {
