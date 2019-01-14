@@ -13,7 +13,7 @@ Player.prototype.scorePlus = function () {
 var playerOne = {};
 var playerTwo = {};
 
-//function that throws dice
+//function that throws the dice
 var rolled = 0;
 var roundTotal = 0;
 var roll = function () {
