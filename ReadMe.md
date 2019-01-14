@@ -20,7 +20,7 @@ Players throw a dice and scores as many points as the total shown on the dice pr
 
 * u first have to have internet connection
 * then open your web browser
-* and type this website: 
+* and type this website: https://ashleyalpha.github.io/mine4/
 
 # Contacts
 
