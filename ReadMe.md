@@ -1,6 +1,4 @@
-#Project Name:
-
- Pig-Dice-Game
+# PIG-DICE-GAME:
 
 # AUthor: 
 
@@ -31,4 +29,4 @@ Players throw a dice and scores as many points as the total shown on the dice pr
 
 # License
 
-This project is under MIT License. Copyright (c) 2019 AlphaMbabazi
+This project is under MIT License. Copyright (c) 2019 Alpha Mbabazi
