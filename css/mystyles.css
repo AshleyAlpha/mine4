@@ -90,7 +90,7 @@ h2{
 
 .player-score {
   font-size: 500%;
-  color: red;
+  color:pink;
 }
 
 #restart {
@@ -101,7 +101,7 @@ h2{
 .copyright {
   display: flex;
   justify-content: center;
-  width: 400px;
+  width: 300px;
 }
 
 .copyname {
